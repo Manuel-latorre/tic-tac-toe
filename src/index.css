@@ -6,8 +6,10 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
+  background-image: url('./assets/bgTictoe.gif');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -83,7 +85,7 @@ body {
 
 .square.is-selected {
   color: #fff;
-  background: #09f;
+  background: #757474;
 }
 
 .winner {
@@ -128,4 +130,9 @@ body {
   place-items: center;
   cursor: pointer;
   font-size: 48px;
+  background:linear-gradient(135deg,rgba(255,255,255,0.1), rgba(255,255,255,0));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: solid 1px rgba(222, 218, 218, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
 }
